@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Konektifitas Membangun Negeri | Tempo.co </title>
+    <meta name="language" content="id">
+    <meta name="description" content="Konektifitas Membangun Negeri">
+    <meta name="keywords" content="kominfo, bts, pln">
+    <meta name="copyright" content="">
+    <meta name="author" content="Tempo.co">
+    <meta name="robots" content="index,follow">
+    <meta name="creation date" content="2023-11-20">
+    <meta property="og:title" content="Konektifitas Membangun Negeri">
+    <meta property="og:description" content="Konektifitas Membangun Negeri">
+    <meta property="og:image" content="img/thumbnail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Konektifitas Membangun Negeri">
+    <meta name="twitter:description" content="Konektifitas Membangun Negeri">
+    <meta name="twitter:image:src" content="img/thumbnail.jpg">
+    <meta name="twitter:image:width" content="650">
+    <meta name="twitter:image:height" content="433">
+    <meta property="fb:app_id" content="332404380172618">
+    <meta property="fb:pages" content="160355148441">
+    <link rel="shortcut icon" href="https://statik.tempo.co/favicon/tempo-white.ico" type="image/x-icon">
+    <!-- style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Paytone+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="viewport" data-parallax="container">
+        <div class="hero">
+            <div class="hero__view">
+                <img class="view-desktop" src="img/hero/view.png" alt="">
+                <img class="view-mobile__top" src="img/hero/herotop-m.png" alt="">
+                <img class="view-mobile__bottom" src="img/hero/herobottom-m.png" alt="">
+            </div>
+            <div class="hero__bg">
+                <div class="hero__sky">
+                    <div class="sky">
+                        <div class="text">#CODEVEMBER</div>
+                        <div class="stars"></div>
+                        <div class="stars1"></div>
+                        <div class="stars2"></div>
+                        <div class="shooting-stars"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="block"></div>
+            <div class="hero__earth" data-scroll-speed="2">
+                <img class="inner" src="img/hero/earth1.png" alt="">
+            </div>
+            <div class="hero__astronot" data-scroll-speed="5">
+                <img src="img/hero/astronot.png" alt="">
+            </div>
+            <div class="hero__satelit" data-scroll-speed="15">
+                <img src="img/hero/satelit.png" alt="">
+            </div>
+            <div class="hero__title">
+                <h1>HELLO THERE</h1>
+            </div>
+            <div class="scroll-down start">
+                <p>Scroll down</p>
+                <span></span>
+            </div>
+        </div>
+        <div class="sectiont1">
+            2
+        </div>
+        <div class="sectiont2">
+            3
+        </div>
+    </div>
+
+    <!-- <div class="uxBestview">
+        <div class="display-table">
+            <div class="display-center">
+                <div class="uxBestview__icon">
+                    <img src="img/ux-screen-rotate.png">
+                </div>
+                <div class="uxBestview__title">
+                    Best Experience on portrait mode,<br>lets rotate your device.
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--back to top-->
+    <!-- <div class="m-backtotop" aria-hidden="true">
+        <div class="arrow">
+            <img src="img/top.png" alt="">
+        </div>
+        <div class="text">
+            Back to top
+        </div>
+    </div> -->
+
+
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/TweenMax.min.js"></script> -->
+    <!--<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/lottie.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script> -->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/engine.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            jQuery.scrollSpeed(200, 800);
+        });
+
+        (function($) {
+
+            jQuery.scrollSpeed = function(step, speed, easing) {
+
+                var $document = $(document),
+                    $window = $(window),
+                    $body = $('html, body'),
+                    option = easing || 'default',
+                    root = 0,
+                    scroll = false,
+                    scrollY,
+                    scrollX,
+                    view;
+
+                if (window.navigator.msPointerEnabled)
+
+                    return false;
+
+                $window.on('mousewheel DOMMouseScroll', function(e) {
+
+                    var deltaY = e.originalEvent.wheelDeltaY,
+                        detail = e.originalEvent.detail;
+                    scrollY = $document.height() > $window.height();
+                    scrollX = $document.width() > $window.width();
+                    scroll = true;
+
+                    if (scrollY) {
+
+                        view = $window.height();
+
+                        if (deltaY < 0 || detail > 0)
+
+                            root = root + view >= $document.height() ? root : root += step;
+
+                        if (deltaY > 0 || detail < 0)
+
+                            root = root <= 0 ? 0 : root -= step;
+
+                        $body.stop().animate({
+
+                                scrollTop: root
+                            },
+
+                            speed, option,
+                            function() {
+
+                                scroll = false;
+
+                            });
+                    }
+
+                    if (scrollX) {
+
+                        view = $window.width();
+
+                        if (deltaY < 0 || detail > 0)
+
+                            root = root + view >= $document.width() ? root : root += step;
+
+                        if (deltaY > 0 || detail < 0)
+
+                            root = root <= 0 ? 0 : root -= step;
+
+                        $body.stop().animate({
+
+                                scrollLeft: root
+                            },
+
+                            speed, option,
+                            function() {
+
+                                scroll = false;
+
+                            });
+                    }
+
+                    return false;
+
+                }).on('scroll', function() {
+
+                    if (scrollY && !scroll) root = $window.scrollTop();
+                    if (scrollX && !scroll) root = $window.scrollLeft();
+
+                }).on('resize', function() {
+
+                    if (scrollY && !scroll) view = $window.height();
+                    if (scrollX && !scroll) view = $window.width();
+
+                });
+            };
+
+            jQuery.easing.default = function(x, t, b, c, d) {
+
+                return -c * ((t = t / d - 1) * t * t * t - 1) + b;
+            };
+
+        })(jQuery);
+
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
