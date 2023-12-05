@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Konektifitas Membangun Negeri | Tempo.co </title>
+    <title>Setia Di Tapal Batas </title>
     <meta name="language" content="id">
     <meta name="description" content="Konektifitas Membangun Negeri">
     <meta name="keywords" content="kominfo, bts, pln">
@@ -25,20 +25,23 @@
     <meta property="fb:app_id" content="332404380172618">
     <meta property="fb:pages" content="160355148441">
     <link rel="shortcut icon" href="https://statik.tempo.co/favicon/tempo-white.ico" type="image/x-icon">
-    <!-- style -->
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Paytone+One&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Tourney:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
-    <div class="viewport" data-parallax="container">
+    <div class="loader">
+        <div id="loader"></div>
+        <div class="loader__text">Please Wait ...</div>
+    </div>
+    <div data-parallax="container">
         <div class="hero">
             <div class="hero__view">
                 <img class="view-desktop" src="img/hero/view.png" alt="">
@@ -48,7 +51,6 @@
             <div class="hero__bg">
                 <div class="hero__sky">
                     <div class="sky">
-                        <div class="text">#CODEVEMBER</div>
                         <div class="stars"></div>
                         <div class="stars1"></div>
                         <div class="stars2"></div>
@@ -66,8 +68,8 @@
             <div class="hero__satelit" data-scroll-speed="15">
                 <img src="img/hero/satelit.png" alt="">
             </div>
-            <div class="hero__title">
-                <h1>HELLO THERE</h1>
+            <div class="hero__title" data-scroll-speed="15">
+                <img src="img/hero/title.png" alt="">
             </div>
             <div class="scroll-down start">
                 <p>Scroll down</p>
@@ -75,14 +77,301 @@
             </div>
         </div>
         <div class="sectiont1">
-            2
+            <div class="sectiont2__objm v-m" data-aos="fade-up">
+                <img src="img/sectiont1/obj-m.png" alt="">
+            </div>
+            <div class="container">
+                <div class="sectiont1__content" data-aos="fade-up">
+                    <img src="img/sectiont1/obj.png" alt="">
+                </div>
+                <div class="sectiont1__wrap">
+                    <div class="sectiont1__left" data-aos="flip-up" data-aos-delay="400">
+                        <div class="radar"></div>
+                        <div class="sectiont1__left--bg">
+                            <img src="img/sectiont1/peta.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sectiont1__right">
+                        <p data-aos="fade-up" data-aos-delay="800">
+                            Pemerataan akses internet untuk wilayah 3T (Terluar, Terdepan, dan Tertinggal).
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="800">
+                            Susah sih, tapi berguna banget untuk mewujudkan visi Indonesia Emas 2045!
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="800">
+                            Alasan masyarakat wilayah 3T susah akses internet:
+                        </p>
+                        <div class="sectiont1__right--diagram" data-aos="fade-up" data-aos-delay="1200">
+                            <img src="img/sectiont1/diagram.png" alt="">
+                            <div class="text-diagram text1">
+                                Topografi Wilayah Yang sulit.
+                            </div>
+                            <div class="text-diagram text2">
+                                Jumlah Penduduk Sedikit.
+                            </div>
+                            <div class="text-diagram text3">
+                                Kebutuhan Daya Listrik.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectiont1__cloud">
+                <img src="img/sectiont1/cloud.png" alt="">
+            </div>
+            <div class="sectiont1__bottom">
+                <img src="img/sectiont1/obj-bottom.png" alt="">
+            </div>
         </div>
         <div class="sectiont2">
-            3
+            <div class="container">
+                <div class="sectiont2__wrap">
+                    <div class="sectiont2__left">
+                        <div class="sectiont2__right--title v-m" data-aos="fade-up" data-aos-delay="400">
+                            Jaringan Seret Di Ujung Negeri
+                        </div>
+                        <div id="tentara1" data-aos="fade-up" data-aos-delay="400"></div>
+                    </div>
+                    <div class="sectiont2__right">
+                        <div class="sectiont2__right--title v-d" data-aos="fade-up" data-aos-delay="600">
+                            Jaringan Seret Di Ujung Negeri
+                        </div>
+                        <p data-aos="fade-up" data-aos-delay="700">
+                            <b>Tahukah kamu?</b><br>  Para anggota TNI yang yang bertugas di Pos Satgas Pengamanan Perbatasan Indonesia-Malaysia di Temajuk, Kecamatan Paloh, Sambas, Kalimantan Barat sangat takut akan “Hujan”.
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="800">
+                            <b>Pasalnya,</b> jika hujan mengguyur di wilayah tapal batas, semua akses komunikasi, termasuk internet terputus. Sebaliknya, tentara Malaysia tetap aman mengakses internet selama hujan. Bahkan sinyal internet Malaysia bisa
+                            diakses di wilayah Indonesia!
+                        </p>
+                        <div class="sectiont2__right--quiz" data-aos="flip-left" data-aos-delay="900">
+                            <p>Bagaimana cara anggota TNI mengakses internet selama menjaga perbatasan?</p>
+                            <button id="a-a">A. WiFi</button>
+                            <button id="a-b">B. Voucher</button>
+                            <button id="a-c">C. Router</button>
+                            <button id="a-d">D. Paket Data</button>
+                            <div class="quiz-final1">
+                                Salah! Para anggota secara swadaya membeli voucher internet dengan uang pribadi
+                            </div>
+                            <div class="quiz-final2">
+                                Benar! Para anggota secara swadaya membeli voucher internet dengan uang pribadi
+                            </div>
+                            <div class="quiz-final3">
+                                Salah! Para anggota secara swadaya membeli voucher internet dengan uang pribadi
+                            </div>
+                            <div class="quiz-final4">
+                                Salah! Para anggota secara swadaya membeli voucher internet dengan uang pribadi
+                            </div>
+                            <div class="quiz-title">
+                                <img src="img/sectiont2/title-quiz.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectiont2__wrap2">
+                    <div class="sectiont2__left2">
+                        <p data-aos="fade-up" data-aos-delay="400">
+                            Setali tiga uang, para anggota TNI di Pos Somografi, Papua, rela mendaki gunung selama 1 jam demi bisa mengakses internet untuk menghubungi keluarga.
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="600">
+                            Tak jarang mereka membuka tenda, jika pendakian dilakukan malam hari.
+                        </p>
+                        <div class="sectiont2__left2--years" data-aos="fade-up" data-aos-delay="800">
+                            <span>2017</span><span>2018</span><span>2019</span><span class="c-b">2020</span>
+                        </div>
+                        <div class="sectiont2__textbottom" data-aos="fade-up" data-aos-delay="900">
+                            Namun, masa-masa sulit tersebut berakhir pada tahun 2020 ketika BAKTI Kominfo menancapkan BTS di belakang pos penjagaan.
+                        </div>
+                        <div class="sectiont2__right--quiz" data-aos="flip-left" data-aos-delay="1100">
+                            <p>Kendati sudah berdiri BTS, sinyal di Somograf belum stabil.</p>
+                            <div class="quiz-wrap quiz2">
+                                <button id="a-m">Mitos</button><button id="a-f">Fakta</button>
+                            </div>
+                            <div class="quiz-final11">
+                                BENAR! Pada waktu tertentu sinyal mengalami gangguan, seperti sore biasanya drop, tapi tengah malam sinyal kembali kuat.
+                            </div>
+                            <div class="quiz-final22">
+                                SALAH! Pada waktu tertentu sinyal mengalami gangguan, seperti sore biasanya drop, tapi tengah malam sinyal kembali kuat.
+                            </div>
+                            <div class="quiz-title">
+                                <img src="img/sectiont2/title-quiz.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectiont2__right2">
+                        <div id="tentara2" data-aos="fade-up" data-aos-delay="1500"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectiont2__obj1">
+                <img src="img/sectiont2/obj-right.png" alt="">
+            </div>
+            <div class="sectiont2__obj2">
+                <img src="img/sectiont2/obj-left.png" alt="">
+            </div>
         </div>
+        <div class="sectiont3">
+            <div class="sectiont3__top">
+                <img src="img/sectiont3/obj-top.png" alt="">
+            </div>
+            <div class="sectiont3__obj1">
+                <img src="img/sectiont3/obj-right.png" alt="">
+            </div>
+            <div class="sectiont3__obj2">
+                <img src="img/sectiont3/obj-left.png" alt="">
+            </div>
+            <div class="container">
+                <div class="sectiont3__title">
+                    <h1 data-aos="fade-up" data-aos-delay="400">Warga perbatasan lebih pilih provider malaysia</h1>
+                    <p data-aos="fade-up" data-aos-delay="700">Buruknya, sinyal membuat masyarakat di perbatasan memilih akses internet dari Negeri Jiran karena lebih cepat. Kendati demikian, kedepannya warga berharap dapat menggunakan layanan dari perusahaan nasional.</p>
+                </div>
+                <div class="sectiont3__content">
+                    <div id="people" data-aos="zoom-in" data-aos-delay="900"></div>
+                    <div class="sectiont3__mobile">
+                        <div class="sectiont3__content--list list1" data-aos="fade-left" data-aos-delay="1000">
+                            <img class="animation1" src="img/sectiont3/bg-icon.png" alt="">
+                            <div class="list-icon1">
+                                <img src="img/sectiont3/i1.png" alt="">
+                            </div>
+                            <div class="list-title">
+                                Sinyal Kurang Kuat
+                            </div>
+                            <div class="list-text show-1">
+                                Sinyal seluler dari operator Indonesia masuk ke wilayah perbatasan, tapi sinyalnya tidak kuat
+                            </div>
+                        </div>
+                        <div class="sectiont3__content--list list2" data-aos="fade-right" data-aos-delay="1200">
+                            <img src="img/sectiont3/bg-icon.png" alt="">
+                            <div class="list-icon2">
+                                <img src="img/sectiont3/i2.png" alt="">
+                            </div>
+                            <div class="list-title">
+                                Minim BTS
+                            </div>
+                            <div class="list-text show-2">
+                                Sudah minta berapa kali dibangun BTS, tapi tidak juga dibangun
+                            </div>
+                        </div>
+                        <div class="sectiont3__content--list list3" data-aos="fade-left" data-aos-delay="1300">
+                            <img src="img/sectiont3/bg-icon.png" alt="">
+                            <div class="list-icon3">
+                                <img src="img/sectiont3/i3.png" alt="">
+                            </div>
+                            <div class="list-title">
+                                Jaringan Sulit
+                            </div>
+                            <div class="list-text show-3">
+                                Menurut penuturan warga lama sekali untuk warga bisa internetan dan kirim WhatsApp. Bahkan, telepon tidak bisa
+                            </div>
+                        </div>
+                        <div class="sectiont3__content--list list4" data-aos="fade-right" data-aos-delay="1400">
+                            <img src="img/sectiont3/bg-icon.png" alt="">
+                            <div class="list-icon4">
+                                <img src="img/sectiont3/i4.png" alt="">
+                            </div>
+                            <div class="list-title">
+                                Roaming
+                            </div>
+                            <div class="list-text show-4">
+                                Setiap kali menggunakan provider dari Indonesia terkadang kena roaming
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectiont3__bottom">
+                    <div data-aos="fade-up" data-aos-delay="1450">Namun, semua ini berakhir ketika BAKTI merampungkan pembangunan tower BTS pada 2021</div>
+                </div>
+            </div>
+        </div>
+        <div class="sectiont4">
+            <div class="container">
+                <div class="sectiont4__title">
+                    <h1 data-aos="fade-up" data-aos-delay="400">Wujudkan Sambas Bebas<br> Blank Spot!</h1>
+                    <p data-aos="fade-up" data-aos-delay="600">6 FAKTA SAMBAS SEBAGAI WILAYAH 3T</p>
+                </div>
+                <div class="sectiont4__content">
+                    <img src="img/sectiont4/people.png" alt="" data-aos="fade-up" data-aos-delay="700">
+                    <div id="land" data-aos="fade-up" data-aos="fade-up" data-aos-delay="700"></div>
+                    <div class="sectiont4__line1 line-1" data-aos="fade-up" data-aos-delay="900">
+                        <img src="img/sectiont4/line1.png" alt="">
+                    </div>
+                    <div class="sectiont4__line1 line-2" data-aos="fade-up" data-aos-delay="1200">
+                        <img src="img/sectiont4/line2.png" alt="">
+                    </div>
+                    <div class="sectiont4__line1 line-3" data-aos="fade-up" data-aos-delay="1700">
+                        <img src="img/sectiont4/line3.png" alt="">
+                    </div>
+                    <div class="sectiont4__line1 line-4" data-aos="fade-up" data-aos-delay="2100">
+                        <img src="img/sectiont4/line4.png" alt="">
+                    </div>
+                    <div class="sectiont4__line1 line-5" data-aos="fade-up" data-aos-delay="2600">
+                        <img src="img/sectiont4/line5.png" alt="">
+                    </div>
+                    <div class="sectiont4__line1 line-6" data-aos="fade-up" data-aos-delay="2800">
+                        <img src="img/sectiont4/line6.png" alt="">
+                    </div>
+                    <div class="sectiont4__text text-1" data-aos="fade-up" data-aos-delay="1100">
+                        Memiliki luas wilayah 6.395,7 kilometer persegi dan jumlah penduduk 647.844 jiwa.
+                    </div>
+                    <div class="sectiont4__text text-2" data-aos="fade-up" data-aos-delay="1600">
+                        Masyarakat Sambas kesulitan memasarkan produknya karena keterbatasan internet.
+                    </div>
+                    <div class="sectiont4__text text-3" data-aos="fade-up" data-aos-delay="2000">
+                        Sambas menempati urutan kedua terbesar setelah Kota Pontianak di Kalimantan Barat
+                    </div>
+                    <div class="sectiont4__text text-4" data-aos="fade-up" data-aos-delay="2400">
+                        Memiliki <i>gate</i> langsung (ke Malaysia) Aruk-Biawak, Aruk masuk wilayah Kecamatan Sajingan Besar, Sambas dan Biawak itu Malaysia.
+                    </div>
+                    <div class="sectiont4__text text-5" data-aos="fade-up" data-aos-delay="2700">
+                        Sampai saat ini ada 19 titik di Kabupaten Sambas tidak terjangkau akses internet alias blank spot.
+                    </div>
+                    <div class="sectiont4__text text-6" data-aos="fade-up" data-aos-delay="3000">
+                        Alih-alih sinyal dari <i>provider</i> dalam negeri, sinyal dari Malaysia lah yang banyak masuk ke Sambas.
+                    </div>
+                </div>
+            </div>
+            <div class="sectiont4__bottom">
+                <img src="img/sectiont4/wave-bottom.png" alt="">
+            </div>
+        </div>
+        <div class="sectiont5">
+            <div class="container">
+                <div class="sectiont5__wrap">
+                    <div class="sectiont5__left">
+                        <div class="sectiont5__left--title">
+                            <h1 data-aos="fade-up" data-aos-delay="600">Kedaulatan NKRI Prioritas Kami</h1>
+                            <img class="v-m space-m" src="img/sectiont5/directur.png" alt="" data-aos="fade-up" data-aos-delay="800">
+                            <p data-aos="fade-up" data-aos-delay="1000">Sektor pertahanan dan keamanan seperti Pos-Pos TNI penjaga perbatasan menjadi prioritas pertama yang akan memperoleh akses internet melalui layanan internet satelit SATRIA-I.</p>
+                            <h5 data-aos="fade-up" data-aos-delay="1200">Fadhilah Mathar, Direktur Utama Badan Aksesibilitas Telekomunikasi dan Informasi (BAKTI) Kementerian Komunikasi dan Informatika.</h5>
+                            <div class="titik1">
+                                <img src="img/sectiont5/petik1.png" alt="">
+                            </div>
+                            <div class="titik2">
+                                <img src="img/sectiont5/petik2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectiont5__right">
+                        <img class="v-d" src="img/sectiont5/directur.png" alt="" data-aos="zoom-in" data-aos-delay="1350">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="credit__title">
+                    Didukung oleh:
+                </div>
+                <div class="credit__img">
+                    <img src="img/logo-footer.svg" alt="">
+                </div>
+                <div class="credit__text">
+                    Copyright © 2023 - Tempo.co (Tempo Media Group). All right reserved.
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <!-- <div class="uxBestview">
+    <div class="uxBestview">
         <div class="display-table">
             <div class="display-center">
                 <div class="uxBestview__icon">
@@ -93,138 +382,29 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!--back to top-->
-    <!-- <div class="m-backtotop" aria-hidden="true">
+    <div class="m-backtotop" aria-hidden="true">
         <div class="arrow">
             <img src="img/top.png" alt="">
         </div>
         <div class="text">
             Back to top
         </div>
-    </div> -->
+    </div>
 
 
-
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script> -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="js/TweenMax.min.js"></script> -->
-    <!--<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
     <script type="text/javascript" src="js/lottie.min.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script> -->
-    <script type="text/javascript" src="js/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/engine.js"></script>
     <script>
-        $(document).ready(function() {
-
-            jQuery.scrollSpeed(200, 800);
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
         });
-
-        (function($) {
-
-            jQuery.scrollSpeed = function(step, speed, easing) {
-
-                var $document = $(document),
-                    $window = $(window),
-                    $body = $('html, body'),
-                    option = easing || 'default',
-                    root = 0,
-                    scroll = false,
-                    scrollY,
-                    scrollX,
-                    view;
-
-                if (window.navigator.msPointerEnabled)
-
-                    return false;
-
-                $window.on('mousewheel DOMMouseScroll', function(e) {
-
-                    var deltaY = e.originalEvent.wheelDeltaY,
-                        detail = e.originalEvent.detail;
-                    scrollY = $document.height() > $window.height();
-                    scrollX = $document.width() > $window.width();
-                    scroll = true;
-
-                    if (scrollY) {
-
-                        view = $window.height();
-
-                        if (deltaY < 0 || detail > 0)
-
-                            root = root + view >= $document.height() ? root : root += step;
-
-                        if (deltaY > 0 || detail < 0)
-
-                            root = root <= 0 ? 0 : root -= step;
-
-                        $body.stop().animate({
-
-                                scrollTop: root
-                            },
-
-                            speed, option,
-                            function() {
-
-                                scroll = false;
-
-                            });
-                    }
-
-                    if (scrollX) {
-
-                        view = $window.width();
-
-                        if (deltaY < 0 || detail > 0)
-
-                            root = root + view >= $document.width() ? root : root += step;
-
-                        if (deltaY > 0 || detail < 0)
-
-                            root = root <= 0 ? 0 : root -= step;
-
-                        $body.stop().animate({
-
-                                scrollLeft: root
-                            },
-
-                            speed, option,
-                            function() {
-
-                                scroll = false;
-
-                            });
-                    }
-
-                    return false;
-
-                }).on('scroll', function() {
-
-                    if (scrollY && !scroll) root = $window.scrollTop();
-                    if (scrollX && !scroll) root = $window.scrollLeft();
-
-                }).on('resize', function() {
-
-                    if (scrollY && !scroll) view = $window.height();
-                    if (scrollX && !scroll) view = $window.width();
-
-                });
-            };
-
-            jQuery.easing.default = function(x, t, b, c, d) {
-
-                return -c * ((t = t / d - 1) * t * t * t - 1) + b;
-            };
-
-        })(jQuery);
-
-        AOS.init();
     </script>
 
 

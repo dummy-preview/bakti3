@@ -1,6 +1,11 @@
 $(document).ready(function() {
+    if ($(window).load(function() {
+            $(".loader").delay(3500).fadeOut("slow", function() {
+                $(this).remove()
+            })
+        }))
     // s backtotop
-    var toggleHeight = $(window).outerHeight() * 1;
+        var toggleHeight = $(window).outerHeight() * 1;
 
     $(window).scroll(function() {
         if ($(window).scrollTop() > toggleHeight) {
@@ -16,85 +21,106 @@ $(document).ready(function() {
         }, "slow");
         return false;
     });
-    // e backtotop
-    // $('.image-popup').magnificPopup({
-    //     type: 'image',
-    //     mainClass: 'mfp-with-zoom',
-    //     gallery: {
-    //         enabled: true
-    //     },
 
-    //     zoom: {
-    //         enabled: true,
+    // q1
+    $('#a-a').click(function() {
+        $('.quiz-final1').fadeIn();
+        $('.quiz-final2').fadeOut();
+        $('.quiz-final3').fadeOut();
+        $('.quiz-final4').fadeOut();
+    });
+    $('#a-b').click(function() {
+        $('.quiz-final2').fadeIn();
+        $('.quiz-final1').fadeOut();
+        $('.quiz-final3').fadeOut();
+        $('.quiz-final4').fadeOut();
+    });
+    $('#a-c').click(function() {
+        $('.quiz-final3').fadeIn();
+        $('.quiz-final2').fadeOut();
+        $('.quiz-final1').fadeOut();
+        $('.quiz-final4').fadeOut();
+    });
+    $('#a-d').click(function() {
+        $('.quiz-final4').fadeIn();
+        $('.quiz-final2').fadeOut();
+        $('.quiz-final3').fadeOut();
+        $('.quiz-final1').fadeOut();
+    });
+    // q2
+    $('#a-m').click(function() {
+        $('.quiz-final22').fadeIn();
+        $('.quiz-final11').fadeOut();
 
-    //         duration: 300,
-    //         easing: 'ease-in-out',
+    });
+    $('#a-f').click(function() {
+        $('.quiz-final11').fadeIn();
+        $('.quiz-final22').fadeOut();
 
-    //         opener: function(openerElement) {
+    });
+    // list 
+    $('.list1').click(function() {
+        $('.list1').addClass('show-list');
+        $('.show-1').fadeIn();
+    });
+    $('.list2').click(function() {
+        $('.list2').addClass('show-list');
+        $('.show-2').fadeIn();
+    });
+    $('.list3').click(function() {
+        $('.list3').addClass('show-list');
+        $('.show-3').fadeIn();
+    });
+    $('.list4').click(function() {
+        $('.list4').addClass('show-list');
+        $('.show-4').fadeIn();
+    });
 
-    //             return openerElement.is('img') ? openerElement : openerElement.find('img');
-    //         }
-    //     }
-
-    // });
 
 });
-// swiper
-// var swiper = new Swiper('.swiper-container', {
-//     loop: true,
-//     pagination: ".swiper-pagination",
-//     effect: 'ease',
-//     speed: 1000,
-//     slidesPerView: '1',
-//     paginationClickable: true,
-//     autoplay: false,
-//     spaceBetween: 30,
-//     centeredSlides: true,
-//     effect: "slide",
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-//     pagination: {
-//         el: '.swiper-pagination'
-//     },
-//     autoplay: {
-//         delay: 2500,
-//         disableOnInteraction: false,
-//     },
-
-// });
-
-// const gallerySlider = new Swiper(".swiper.is-gallery", {
-//     loop: true,
-//     slidesPerView: 2,
-//     centeredSlides: true,
-//     speed: 300,
-//     grabCursor: true,
-//     parallax: true,
-//     autoplay: {
-//         delay: 2500,
-//         disableOnInteraction: false,
-//     },
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-//     pagination: {
-//         el: '.swiper-pagination'
-//     },
-// });
 
 // animated
 // bodymovin
-// var animation = bodymovin.loadAnimation({
-//     container: document.getElementById('sepeda'),
-//     renderer: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: 'img/hero/sepeda.json',
-//     name: 'myAnimation',
-// });
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('people'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/sectiont3/people.json',
+    name: 'myAnimation',
+});
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('tentara1'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/sectiont2/tentara1.json',
+    name: 'myAnimation',
+});
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('tentara2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/sectiont2/tentara2.json',
+    name: 'myAnimation',
+});
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('land'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/sectiont4/people.json',
+    name: 'myAnimation',
+});
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('loader'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/loader.json',
+    name: 'myAnimation',
+});
 
 // parallax
 $.fn.moveIt = function() {
@@ -134,4 +160,8 @@ $(window).scroll(function() {
     } else {
         $("#scrollFx").css({ "bottom": ($(window).scrollTop()) + "px" });
     }
+});
+// scroll smoth
+$(function() {
+    jQuery.scrollSpeed(250, 1700);
 });
